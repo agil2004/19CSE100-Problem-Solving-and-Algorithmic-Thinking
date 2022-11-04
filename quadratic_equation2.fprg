@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22003"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:52:52 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAwMzsyMDIyMjNNQVlDMDA0MDsyMDIyLTExLTA0OzA5OjMzOjM1IEFNOzMwNTI="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAwMzsyMDIyMjNNQVlDMDA0MDsyMDIyLTExLTA0OzA5OjMzOjM3IEFNOzE7Q0IuRU4uVTRDWVMyMjAwMzsyMDIyMjNNQVlDMDA0MDsyMDIyLTExLTA0OzA5OjEzOjEwIEFNOzYyNjQ="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAwMzsyMDIyMjNNQVlDMDA0MDsyMDIyLTExLTA0OzEwOjUyOjUyIEFNOzM7MzE1NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="To find thr roots of quadratic equations"/>
+            <declare name="a, b, c" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the value of a&quot;" newline="True"/>
+            <input variable="a"/>
+            <comment text="get the input from the user"/>
+            <output expression="&quot;enter the value b&quot;" newline="True"/>
+            <input variable="b"/>
+            <output expression="&quot;enter the value c&quot;" newline="True"/>
+            <input variable="c"/>
+            <declare name="root1" type="Integer" array="False" size=""/>
+            <comment text="use the quadratic formula to calculate the roots&#13;&#10;"/>
+            <assign variable="root1" expression="(-b+(b^2-4*a*c)^0.5)/(2*a)"/>
+            <output expression="root1" newline="True"/>
+            <declare name="root2" type="Integer" array="False" size=""/>
+            <assign variable="root2" expression="(-b-(b^2-4*a*c)^0.5)/(2*a)"/>
+            <output expression="root2" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

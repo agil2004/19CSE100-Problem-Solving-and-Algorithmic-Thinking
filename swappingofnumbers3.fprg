@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="CB.EN.U4CYS22003"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-11-04 10:55:35 AM"/>
+        <attribute name="created" value="Q0IuRU4uVTRDWVMyMjAwMzsyMDIyMjNNQVlDMDA0MDsyMDIyLTExLTA0OzEwOjExOjQ4IEFNOzMwNDQ="/>
+        <attribute name="edited" value="Q0IuRU4uVTRDWVMyMjAwMzsyMDIyMjNNQVlDMDA0MDsyMDIyLTExLTA0OzEwOjU1OjM1IEFNOzc7MzE2Mg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="to swap the numbers without using more than two variables"/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the value of a&quot;" newline="True"/>
+            <input variable="a"/>
+            <comment text="give the number a to swap"/>
+            <declare name="b" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the value of b&quot;" newline="True"/>
+            <input variable="b"/>
+            <comment text="give the number b to swap&#13;&#10;"/>
+            <output expression="&quot;values of a and b before swapping&quot;" newline="True"/>
+            <output expression="a" newline="True"/>
+            <output expression="b" newline="True"/>
+            <assign variable="a" expression="a+b"/>
+            <comment text="use the opreators to swap the numbers"/>
+            <assign variable="b" expression="a-b"/>
+            <assign variable="a" expression="a-b"/>
+            <output expression="&quot;values of a and b after swapping&quot;" newline="True"/>
+            <output expression="a" newline="True"/>
+            <output expression="b" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
