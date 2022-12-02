@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22003"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:09:29 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjAwMzsyMDIyMjNNQVlDMDA0MDsyMDIyLTEyLTAyOzEwOjA1OjQxIEFNOzMyOTU="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjAwMzsyMDIyMjNNQVlDMDA0MDsyMDIyLTEyLTAyOzEwOjA1OjQ2IEFNOzE7Y2IuZW4udTRjeXMyMjAwMzsyMDIyMjNNQVlDMDA0MDsyMDIyLTEyLTAyOzA5OjM4OjE0IEFNO0FkZGl0aW9uX29mX251bWJlcnN0YWJsZS5mcHJnOzk4MTE="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjAwMzsyMDIyMjNNQVlDMDA0MDsyMDIyLTEyLTAyOzEwOjA5OjI5IEFNOzE7MzQxMw=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="MULTIPLICATION TABLE"/>
+            <declare name="number1" type="Integer" array="False" size=""/>
+            <comment text="first we get 0"/>
+            <declare name="number2" type="Integer" array="False" size=""/>
+            <declare name="multiplication" type="Integer" array="False" size=""/>
+            <assign variable="multiplication" expression="0"/>
+            <comment text="start the program from zero"/>
+            <for variable="number1" start="1" end="10" direction="inc" step="1">
+                <comment text="multiplication of number table from 1to 10"/>
+                <output expression="&quot;MULTIPLICATION OF NUMBERS&quot;&amp;number1" newline="True"/>
+                <for variable="number2" start="1" end="10" direction="inc" step="1">
+                    <assign variable="multiplication" expression="number1*number2"/>
+                    <output expression="number1&amp;&quot;*&quot;&amp;number2&amp;&quot;=&quot;&amp;multiplication" newline="True"/>
+                </for>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

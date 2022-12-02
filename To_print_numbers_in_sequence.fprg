@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22003"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 10:30:28 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjAwMzsyMDIyMjNNQVlDMDA0MDsyMDIyLTEyLTAyOzEwOjEzOjE4IEFNOzMyOTg="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjAwMzsyMDIyMjNNQVlDMDA0MDsyMDIyLTEyLTAyOzEwOjMwOjI4IEFNOzE7MzQwNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="to print numbers in sequence"/>
+            <declare name="count" type="Integer" array="False" size=""/>
+            <declare name="number1" type="Integer" array="False" size=""/>
+            <declare name="number2" type="Integer" array="False" size=""/>
+            <output expression="&quot;enter the numbers that you want to display&quot;" newline="True"/>
+            <input variable="count"/>
+            <comment text="to print the initial value"/>
+            <assign variable="number1" expression="1"/>
+            <assign variable="number2" expression="1"/>
+            <output expression="number1" newline="True"/>
+            <comment text="loop count n-1 as first value is printed"/>
+            <while expression="count&gt;1">
+                <comment text="using whileloop"/>
+                <output expression="number2" newline="True"/>
+                <assign variable="number2" expression="number1+number2"/>
+                <comment text="decrementing the count variable to output the output in finite numbers"/>
+                <assign variable="number1" expression="number2-number1"/>
+                <assign variable="count" expression="count-1"/>
+            </while>
+        </body>
+    </function>
+</flowgorithm>

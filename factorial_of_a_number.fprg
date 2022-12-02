@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22003"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 09:35:24 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjAwMzsyMDIyMjNNQVlDMDA0MDsyMDIyLTEyLTAyOzA5OjE0OjE4IEFNOzMzMDc="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjAwMzsyMDIyMjNNQVlDMDA0MDsyMDIyLTEyLTAyOzA5OjE0OjIxIEFNOzE7Y2IuZW4udTRjeXMyMjAwMzsyMDIyMjNNQVlDMDA0MDsyMDIyLTEyLTAyOzA4OjUzOjMwIEFNO3N1bW9mXzFfdG9fMTBudW1iZXJzLmZwcmc7OTI4Mw=="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjAwMzsyMDIyMjNNQVlDMDA0MDsyMDIyLTEyLTAyOzA5OjM1OjI0IEFNOzI7MzQxNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="to find a factorial of a given number"/>
+            <declare name="factorial" type="Integer" array="False" size=""/>
+            <comment text="declare factorial and number"/>
+            <declare name="num" type="Integer" array="False" size=""/>
+            <assign variable="factorial" expression="1"/>
+            <for variable="num" start="1" end="10" direction="inc" step="1">
+                <comment text="using for loop"/>
+                <assign variable="factorial" expression="factorial*num"/>
+            </for>
+            <output expression="&quot;the factorial  is:&quot;&amp;factorial" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

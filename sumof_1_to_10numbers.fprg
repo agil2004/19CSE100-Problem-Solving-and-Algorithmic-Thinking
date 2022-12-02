@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22003"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-02 09:17:40 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjAwMzsyMDIyMjNNQVlDMDA0MDsyMDIyLTEyLTAyOzA4OjUzOjMwIEFNOzMzMDM="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjAwMzsyMDIyMjNNQVlDMDA0MDsyMDIyLTEyLTAyOzA5OjE3OjQwIEFNOzI7MzQxNA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="to find the sum of numbers from 1 to 10"/>
+            <declare name="sum" type="Integer" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <for variable="i" start="1" end="10" direction="inc" step="1">
+                <comment text="using for loop"/>
+                <assign variable="sum" expression="sum+i"/>
+            </for>
+            <output expression="&quot;the sum is:&quot;&amp;sum" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
