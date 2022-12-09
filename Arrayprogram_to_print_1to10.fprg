@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 09:42:25 AM"/>
+        <attribute name="created" value="dXNlcjtMQVBUT1AtQlQxOTRWNFA7MjAyMi0xMi0wOTswOToyNzoxOCBBTTsyNzU2"/>
+        <attribute name="edited" value="dXNlcjtMQVBUT1AtQlQxOTRWNFA7MjAyMi0xMi0wOTswOTo0MjoyNSBBTTsxOzI4NTk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Array program to display the values from o to 10"/>
+            <declare name="x" type="Integer" array="True" size="10"/>
+            <declare name="y" type="Integer" array="False" size=""/>
+            <declare name="index" type="Integer" array="False" size=""/>
+            <for variable="index" start="0" end="9" direction="inc" step="1">
+                <comment text="using for loop"/>
+                <output expression="&quot;Enter the value for index =[&quot;&amp;index&amp;&quot;]&quot;" newline="True"/>
+                <input variable="y"/>
+                <assign variable="x[index]" expression="y"/>
+            </for>
+            <output expression="&quot;Array contents&quot;" newline="True"/>
+            <for variable="index" start="0 " end="9" direction="inc" step="1">
+                <output expression="&quot;Array contents x&quot;&amp;index&amp;&quot;] =&quot;&amp;x[index]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

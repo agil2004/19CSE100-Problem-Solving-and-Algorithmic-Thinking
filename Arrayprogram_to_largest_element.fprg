@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="user"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2022-12-09 10:36:58 AM"/>
+        <attribute name="created" value="dXNlcjtMQVBUT1AtQlQxOTRWNFA7MjAyMi0xMi0wOTsxMDoxNTo1MCBBTTsyNzQx"/>
+        <attribute name="edited" value="dXNlcjtMQVBUT1AtQlQxOTRWNFA7MjAyMi0xMi0wOTsxMDoxNTo1NCBBTTsxO2RlZXBhaztERUVQQUtLVU1BUjsyMDIyLTEyLTA5OzA5OjU0OjU0IEFNO0xhcmdlc3RFbGVtZW50QXJyYXkuZnByZzs4MDk3"/>
+        <attribute name="edited" value="dXNlcjtMQVBUT1AtQlQxOTRWNFA7MjAyMi0xMi0wOTsxMDozNjo1OCBBTTs0OzI4NjM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Array program to find largest element in an integer array"/>
+            <declare name="x" type="Real" array="True" size="10"/>
+            <declare name="y, z, a" type="Integer" array="False" size=""/>
+            <for variable="y" start="0" end="9" direction="inc" step="1">
+                <output expression="&quot;Enter the number of index &quot;&amp;y&amp;&quot; :&quot;" newline="True"/>
+                <input variable="z"/>
+                <assign variable="x[y]" expression="z"/>
+            </for>
+            <assign variable="a" expression="0"/>
+            <for variable="y" start="0" end="9" direction="inc" step="1">
+                <if expression="a&lt;x[y]">
+                    <then>
+                        <assign variable="a" expression="x[y]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <output expression="&quot;largest element &quot;&amp;a" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
