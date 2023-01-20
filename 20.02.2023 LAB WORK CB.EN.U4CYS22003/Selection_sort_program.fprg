@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="cb.en.u4cys22003"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-01-20 10:50:02 AM"/>
+        <attribute name="created" value="Y2IuZW4udTRjeXMyMjAwMzsyMDIyMjNNQVlDMDA0MTsyMDIzLTAxLTIwOzA5OjA1OjU3IEFNOzMzMTA="/>
+        <attribute name="edited" value="Y2IuZW4udTRjeXMyMjAwMzsyMDIyMjNNQVlDMDA0MTsyMDIzLTAxLTIwOzEwOjUwOjAyIEFNOzc7MzQwNg=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <comment text="Program for selection sort"/>
+            <declare name="i, j, e, d" type="Integer" array="False" size=""/>
+            <declare name="a" type="Integer" array="True" size="5"/>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <comment text="loop for getting input from the user"/>
+                <output expression="&quot;Enter the number &quot;&amp;i+1" newline="True"/>
+                <input variable="a[i]"/>
+            </for>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <comment text="Loop for selection sort program"/>
+                <for variable="j" start="0" end="4" direction="inc" step="1">
+                    <assign variable="e" expression="a[i]"/>
+                    <assign variable="d" expression="a[j]"/>
+                    <if expression="a[i]&gt;a[j]">
+                        <then>
+                            <comment text="checking if else condition for each number&#13;&#10;"/>
+                            <assign variable="a[i]" expression="d"/>
+                            <assign variable="a[j]" expression="e"/>
+                        </then>
+                        <else/>
+                    </if>
+                </for>
+            </for>
+            <for variable="i" start="0" end="4" direction="inc" step="1">
+                <comment text="Loop for displaying output"/>
+                <output expression="a[i]" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>
